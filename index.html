@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eros Tea</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+        <img src="milktealogo.jpg" alt="My Logo">
+        <h1>Eros Tea</h1>
+        <h2>Sweet dreams are made of teas.</h2>
+    </header>
+
+    <form id="Sweet dreams are made of teas.">
+        <div class="basic-info">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+
+        <div class="cuisine-info">
+            <label for="cuisine">Type of Teas:</label>
+            <select id="cuisine" name="cuisine">
+                <option value="Okinawa">Okinawa</option>
+                <option value="Wintermelon">Wintermelon</option>
+                <option value="Tea Based">Tea Based</option>
+                <option value="Matcha">Matcha</option>
+                <option value="Dark Choco">Dark Choco</option>
+                <option value="Cookies and Cream">Cookies and Cream</option>
+            </select>
+
+            <label for="payment">Mode of Payment:</label>
+            <select id="payment" name="payment">
+                <option value="cash">Cash</option>
+                <option value="card">Card</option>
+            </select>
+        </div>
+
+        <div class="order-options">
+            <label for="dine-take">Dine In/Take Out:</label>
+            <select id="dine-take" name="dine-take">
+                <option value="dine-in">Dine In</option>
+                <option value="take-out">Take Out</option>
+            </select>
+
+            <label for="comments">Comments/Instructions:</label>
+            <textarea id="comments" name="comments"></textarea>
+        </div>
+
+        <div class="button-container">
+            <button type="submit" id="place-order">Place Order</button>
+            <button type="button" id="cancel-order">Cancel</button>
+        </div>
+    </form>
+
+    <div id="dropdown">
+        <button class="dropdown-toggle">
+            <span>Menu</span>
+            <i class="fa-caret-down"></i>
+        </button>
+        <ul class="menu">
+            <li class="menu-item"><a href="#">Okinawa</a></li>
+            <li class="menu-item"><a href="#">Wintermelon</a></li>
+            <li class="menu-item dropdown">
+                <a href="#" class="submenu-toggle">
+                    <span>Water Based</span>
+                    <i class="fa-solid fa-care-right"></i>
+                </a>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="#">Matcha</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#">Dark Choco</a></li>
+            <li class="menu-item dropdown">
+                <a href="#" class="submenu-toggle">
+                    <span>Cookies and Cream</span>
+                    <i class="fa-solid fa-care-right"></i>
+                </a>
+                <ul class="submenu">
+                   
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
